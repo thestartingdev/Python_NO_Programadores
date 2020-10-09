@@ -46,54 +46,29 @@ dic1.clear()
 dic = {‘a’ : 1, ’b’ : 2, ‘c’ : 3 , ‘d’ : 4}
 dic1 = dic.copy()
 
-
-fromkeys()
-
-Recibe como parámetros un iterable y un valor, devolviendo un diccionario que contiene como claves los elementos del iterable con el mismo valor ingresado. Si el valor no es ingresado, devolverá none para todas las claves.
-
+# fromkeys() = Recibe como parámetros un iterable y un valor, 
+# devolviendo un diccionario que contiene como claves los elementos del iterable con el mismo valor ingresado. 
+# Si el valor no es ingresado, devolverá none para todas las claves.
 dic = dict.fromkeys(['a','b','c','d'],1)
 
-dic →  {‘a’ : 1, ’b’ : 1, ‘c’ : 1 , ‘d’ : 1}
-
-get()
-
-Recibe como parámetro una clave, devuelve el valor de la clave. Si no lo encuentra, devuelve un objeto none.
-
+# get() = Recibe como parámetro una clave, devuelve el valor de la clave. Si no lo encuentra, devuelve un objeto none.
 dic = {‘a’ : 1, ’b’ : 2, ‘c’ : 3 , ‘d’ : 4}
 valor = dic.get(‘b’) 
 
-valor → 2
-
-pop()
-
-Recibe como parámetro una clave, elimina esta y devuelve su valor. Si no lo encuentra, devuelve error.
-
+# pop() = Recibe como parámetro una clave, elimina esta y devuelve su valor. Si no lo encuentra, devuelve error.
 dic = {‘a’ : 1, ’b’ : 2, ‘c’ : 3 , ‘d’ : 4}
 valor = dic.pop(‘b’) 
 
-valor → 2
-dic → {‘a’ : 1, ‘c’ : 3 , ‘d’ : 4}
-
-setdefault()
-
-Funciona de dos formas. En la primera como get
-
+# setdefault() = Funciona de dos formas. En la primera como get
 dic = {‘a’ : 1, ’b’ : 2, ‘c’ : 3 , ‘d’ : 4}
 valor = dic.setdefault(‘a’)
 
-valor → 1
-
-Y en la segunda forma, nos sirve para agregar un nuevo elemento a nuestro diccionario.
+# Y en la segunda forma, nos sirve para agregar un nuevo elemento a nuestro diccionario.
 
 dic = {‘a’ : 1, ’b’ : 2, ‘c’ : 3 , ‘d’ : 4}
 valor = dic.setdefault(‘e’,5)
 
-dic → {‘a’ : 1, ’b’ : 2, ‘c’ : 3 , ‘d’ : 4 , ‘e’ : 5}
-
-update()
-
-Recibe como parámetro otro diccionario. Si se tienen claves iguales, actualiza el valor de la clave repetida; si no hay claves iguales, este par clave-valor es agregado al diccionario.
-
+# update() = Recibe como parámetro otro diccionario. Si se tienen claves iguales, actualiza el valor de la clave repetida; si no hay claves iguales, este par clave-valor es agregado al diccionario.
 dic 1 = {‘a’ : 1, ’b’ : 2, ‘c’ : 3 , ‘d’ : 4}
 dic 2 = {‘c’ : 6, ’b’ : 5, ‘e’ : 9 , ‘f’ : 10}
 dic1.update(dic 2)
